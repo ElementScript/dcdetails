@@ -1,0 +1,19 @@
+@import 'helpers/mixins.scss';
+@import 'helpers/placeholders.scss';
+@import 'helpers/variables.scss';
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.third-spc-menu{
+	height: 7rem;
+}
+
+.app-menu{
+	background-color: oldlace;
+	a {
+		color: $midnight-blue;
+		&:hover{
+			background: $midnight-blue;
+			color: oldlace
+		}
+	}
+}
