@@ -14,7 +14,7 @@
                 stroke-dashoffset: 775; /* empurrar o traço para fora da visão */
                 animation: draw 5s linear forwards;
             }
-
+            
             @keyframes draw {
                 to {
                     stroke-dashoffset: 0;
