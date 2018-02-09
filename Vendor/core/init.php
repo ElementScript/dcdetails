@@ -1,120 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
-    <link rel="stylesheet" href="./App/style/css/main.css">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../dist/main.bundle.css">
 
-    <style>
+        <style>
 
-        #logoD{
-            position: relative;
-            animation: D 20s linear infinite;
-        }
-
-        #logoC{
-            position: relative;
-            animation: C 20s linear infinite;
-        }
-    
-        @keyframes D{
-            0%{
-                opacity: 1
-            }
-            
-            10%{
-                opacity: .75
-            }
-            
-            20%{
-                opacity: .5
-            }
-            
-            30%{
-                opacity: .25
-            }
-            
-            40%{
-                opacity: 0
-            }
-            
-            50%{
-                opacity: 0
+            #svg3705 path {
+                stroke-dasharray: 775; /* cria um traço do tamanho do path inteiro */
+                stroke-dashoffset: 775; /* empurrar o traço para fora da visão */
+                animation: draw 5s linear forwards;
             }
 
-            60%{
-                opacity: .25
+            @keyframes draw {
+                to {
+                    stroke-dashoffset: 0;
+                }
             }
 
-            70%{
-                opacity: .5
-            }
+        </style>
 
-            80%{
-                opacity: .75
-            }
+    </head>
+    <body>
 
-            90%{
-                opacity: 1
-            }
-
-            100%{
-                opacity: 1
-            }
-        }
-
-        @keyframes C{
-            0%{
-                opacity: 0
-            }
-            
-            10%{
-                opacity: .25
-            }
-            
-            20%{
-                opacity: .5
-            }
-            
-            30%{
-                opacity: .75
-            }
-            
-            40%{
-                opacity: 1
-            }
-            
-            50%{
-                opacity: 1
-            }
-
-            60%{
-                opacity: .75
-            }
-
-            70%{
-                opacity: .5
-            }
-
-            80%{
-                opacity: .25
-            }
-
-            90%{
-                opacity: 0
-            }
-
-            100%{
-                opacity: 0
-            }
-        }
-        
-    </style>
-    
-  </head>
-  <body>
+        <div class="container-fluid"> <!-- INICIO DO CONTAINER PRINCIPAL -->
 
 <?php
 
